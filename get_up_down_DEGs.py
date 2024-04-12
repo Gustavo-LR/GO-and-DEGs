@@ -1,5 +1,6 @@
 #This script is usefull to get UpRegulated and DownRegulated seqIDs from a file already filtered with only log2FC values
 #of DEGs, seqID and annotations. The values between -1 and 1 were purged by keep_DEG_LOG2Fold.py (which provides the input for this script)
+#this script is the 3rd, after keep_DEG_LOG2Fold.py
 
 import pandas as pd
 
