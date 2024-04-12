@@ -1,7 +1,8 @@
 #This script uses a input file with the GOID, Go TERM and the seqID for each treatment, and split
 #the DESEq2 table with log2fold change values according to each GO TERM. Thus, it is possible to see
 #the log2fold change values of each GO category, and also the Uni/SwissProt annotation for the DEGS
-#in that category.
+#in that category. It is necessary to remove up/downreg_count lines containing only zeros, or the whole
+#dataframe will be output.
 
 #file content: filter_deseq2_fungi_hydric_DEG.tsv is the file containing the seqID, annotation and log2fold change values
 #and ancestor_fungi_hydric_DEG_modified.tsv is the file with the seqIDs DEGs sorted by GO category.
