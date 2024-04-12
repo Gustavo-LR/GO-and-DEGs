@@ -2,7 +2,9 @@ import pandas as pd
 
 # This script will create a new column after a column starting with upregulated and finishing with _count, and fill
 # this new column with the division of the upregulated_count value by the sum of upregulated_count and downregulate_count
-# values, to obtain the % of upregulated. This script also purges up/downreg_count with only zeros.
+# values, to obtain the % of upregulated. This script also purges up/downreg_count with only zeros. Remove .txt from final file.
+#this script is the 7th, after count_degs_GO.py
+
 # Read the input file
 df = pd.read_csv("ancestor_fungi_hydric_comb_DEG_modified.tsv", sep='\t')
 
