@@ -4,6 +4,7 @@
 #if smaller than -1, replace by DownRegulated, if between 1 and -1, NotDEG. Finally, the cutoff of value_adjustedP is applied to value_log2FC:
 #in the same line if value_adjusted is null, the value from value_log2FC will be replace by null as well. This script can be modified to be more or less
 #permissive by changing conditions and conditions1 values.
+#This script is the first after deseq output.
 
 import pandas as pd
 import numpy as np
