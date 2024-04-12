@@ -7,6 +7,7 @@ import os
 
 #in the end, just use the command paste with all the output files form this script and the result is a .tsv containing the GO terms
 #and the IDs from the genes side-by-syde.
+#this script is the 5rd, after go_ancestor_to_DEG.py
 
 
 # Read content from the list file and create a list of input file paths
