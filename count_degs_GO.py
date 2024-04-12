@@ -1,6 +1,7 @@
 import pandas as pd
 
 # This script will create a new column after every treatment column and count the number of seqIDs using the comma separator as reference
+#this script is the 6st, after paste the go_terms_swap_seqid.py output
 # Read the input file
 df = pd.read_csv("ancestor_fungi_hydric_DEG_edit.tsv", sep='\t')
 
