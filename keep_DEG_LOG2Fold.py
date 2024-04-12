@@ -1,6 +1,6 @@
 #This script will in the end keep only log2FC from rows that have at least one UpRegulated or DownRegulated in the value_log2FC.
 #Values of log2FC between 1 and -1 were nullified as they do no meet DEG criteria. The output of this script is usefull to build
-#heatmaps and to be used as source to analyse specific GO categories.
+#heatmaps and to be used as source to analyse specific GO categories. Replace NAN for null in the input.
 
 import pandas as pd
 
