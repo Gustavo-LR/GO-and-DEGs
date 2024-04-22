@@ -34,7 +34,7 @@ for (term_BP in prefix_list) {
   }
 
   # Remove ", NA" from the Ancestor_Terms column
-  result_df$Offspring_Terms <- gsub(", NA", "", result_df$Offspring_Terms)
+  result_df$Offspring_Terms <- gsub(", NA", "", result_df$Ancestor_Terms)
 
   output_file <- paste0(term_BP, "_ancestor.tsv")
   write.table(result_df, file = output_file, sep = "\t", row.names = FALSE, quote = FALSE)
