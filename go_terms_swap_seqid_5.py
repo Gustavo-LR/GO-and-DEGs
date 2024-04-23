@@ -7,7 +7,9 @@ import os
 
 #in the end, just use the command paste with all the output files form this script and the result is a .tsv containing the GO terms
 #and the IDs from the genes side-by-syde. vitis_vinifera_nr_BP_GO_ancestor.txt is the second colunm from *_ancestor.tsv from
-#fetch_abcestors.R, after replacing commas for new line and sort uniq.
+#fetch_abcestors.R, after replacing commas for new line and sort uniq, i.e. 
+# cut -f2 vitis_vinifera_nr_go_table_clean_BP.txt | tr "," "\n" | sed -re 's/\s+$//' | sort | uniq > vitis_vinifera_nr_BP_GO.txt
+
 #this script is the 5th, after go_ancestor_to_DEG.py
 
 
