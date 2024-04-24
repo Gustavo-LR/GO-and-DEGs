@@ -1,3 +1,13 @@
+#this script will generate a table containing the seqID in the first colunm and all go terms
+#(specifc term and all its ancestors) in the second column. The two inputs are
+#a bl2go annotation table containing only the seqID and BP GOIDs (comma sepparated with no spaces,
+#and lines without GO terms removed, in this script data) and another is the output from
+#fetch_ancestors.R, which is one column with the GOID and another colunm with the GOID and
+#every ancestor term (comma delimited, without spaces and with the ,all removed). This script is
+#used by go_ancestor_to_DEG_4.py. Sometimes, go.db and bl2GO databases have some differences
+#and the output from fetch_ancestors.R doesn't include every entry from bl2GO, add those manually
+#without the ancestorship (or do the ancestorship manually, which is quite laborious, not recommended).
+
 import pandas as pd
 
 # Read the first dataframe
